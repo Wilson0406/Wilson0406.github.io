@@ -41,7 +41,7 @@
   --second-color: #0d2c30;
   --text: #000;
   --text-light: #fff;
-  --text-hover: #eeeee;
+  --text-hover: #eeeeee;
   --background: #fff;
 }
 
@@ -414,14 +414,32 @@ img {
   padding-top: 20px;
   border-radius: .5rem;
   overflow: hidden;
+  /* transition: 1s; */
+}
+
+.project-icon {
+  width: max-content;
+  /* margin-bottom: var(--mb-2); */
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.project-icon:hover {
+  /* color: var(--first-color); */
+  color: deepskyblue;
+  /* transform: scale(1.5); */
 }
 
 .project__img img {
+  /* filter: grayscale(100%); */
+  filter: grayscale(100%) blur(2.5px);
   transition: 1s;
 }
 
 .project__img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
+  /* filter: grayscale(0%); */
+  filter: grayscale(0%) blur(0);
 }
 
 /* CONTACT */
@@ -511,6 +529,10 @@ img {
     color: var(--text);
     margin-right: var(--mb-4);
   }
+  .project-icon {
+    color: var(--text);
+  }
+
   .home__img {
     width: 300px;
     bottom: 25%;
