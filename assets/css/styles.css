@@ -12,6 +12,7 @@
   --first-color: #20b2c5;
   --second-color: #0d2c30;
   --text: #000;
+  --shadow-color: ;
   --text-light: #fff;
   --text-hover: #eeeee;
   --background: #fff;
@@ -40,6 +41,7 @@
   --first-color: #20b2c5;
   --second-color: #0d2c30;
   --text: #000;
+  --shadow-color: #589ba3;
   --text-light: #fff;
   --text-hover: #eeeeee;
   --background: #fff;
@@ -51,6 +53,7 @@
   /* --second-color: #0d2c30; */
   --second-color: #06505f;
   --text: #fff;
+  --shadow-color: #ddd;
   --text-light: #fff;
   --text-hover: #000;
   /* --background: #27496D; #0e356b; */
@@ -410,14 +413,16 @@ img {
 
 .project__img {
   /* box-shadow: 0px 4px 25px var(--text); */
-  box-shadow: 0px 0.5px 10px var(--text);
+  box-shadow: 0px 0.5px 10px var(--shadow-color);
   padding-top: 20px;
-  border-radius: .5rem;
+  border-radius: .4rem;
   overflow: hidden;
   /* transition: 1s; */
 }
 
 .project-icon {
+  justify-content:center;
+  text-align: center;
   width: max-content;
   /* margin-bottom: var(--mb-2); */
   font-size: 1.5rem;
@@ -438,9 +443,36 @@ img {
 
 .project__img img:hover {
   transform: scale(1.01);
-  /* filter: grayscale(0%); */
+  filter: grayscale(0%) blur(0);
+  /* opacity: 1; */
+}
+
+.project__img:hover img {
+  transform: scale(1.01);
   filter: grayscale(0%) blur(0);
 }
+
+.project__img:hover .project__link{
+  visibility: visible;
+  /* transition: 1s; */
+}
+
+.project__link {
+  display: flex;
+  justify-content: space-around;
+  border: 0px solid #989898;
+  background: #c0c0c089 ;
+  text-align: center;
+  /* display: none; */
+  /* opacity: 0; */
+  border: 0;
+  visibility: hidden;
+  /* transition: 1s ease-in; */
+}
+
+/* .project__link:hover {
+   visibility: visible;
+} */
 
 /* CONTACT */
 .contact__container {
