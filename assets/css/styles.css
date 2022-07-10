@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barrio&family=Limelight&family=Poppins:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
+
 /*  VARIABLES CSS  */
 :root {
   --header-height: 3rem;
@@ -342,28 +343,37 @@ img {
 }
 
 .skills__text {
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-2);
 }
 
 .skills__data {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
   position: relative;
   font-weight: var(--font-semi);
   padding: .5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: .5rem;
+  /* margin-bottom: var(--mb-4); */
+  border-radius: .15rem;
   color: #000;
-  background-color: var(--text-light);
+  /* background-color: var(--text-light); */
   /* box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); */
-  box-shadow: 0px 0.5px 10px var(--text);
+  /* box-shadow: 0px 0.5px 10px var(--text); */
 }
 
 .skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
+  font-size: 4rem;
+  margin: var(--mb-2);
+  color: var(--shadow-color);
+  transition: transform 3s ease-in-out;
+}
+
+.skills__icon:hover {
+  /* font-size: 4.2rem; */
+  transform: rotate(360deg);
   color: var(--first-color);
+
 }
 
 .skills__names {
@@ -378,7 +388,7 @@ img {
   bottom: 0;
   background-color: var(--first-color);
   height: .25rem;
-  border-radius: .5rem;
+  border-radius: .3rem;
   z-index: var(--z-back);
 }
 
@@ -452,11 +462,6 @@ img {
   filter: grayscale(0%) blur(0);
 }
 
-.project__img:hover .project__link{
-  visibility: visible;
-  /* transition: 1s; */
-}
-
 .project__link {
   display: flex;
   justify-content: space-around;
@@ -468,6 +473,11 @@ img {
   border: 0;
   visibility: hidden;
   /* transition: 1s ease-in; */
+}
+
+.project__img:hover .project__link{
+  visibility: visible;
+  /* transition: 1s; */
 }
 
 /* .project__link:hover {
