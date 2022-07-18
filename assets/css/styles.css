@@ -365,7 +365,7 @@ img {
 .skills__icon {
   font-size: 4rem;
   margin: var(--mb-2);
-  color: var(--shadow-color);
+  /* color: var(--shadow-color); */
   transition: transform 3s ease-in-out;
 }
 
