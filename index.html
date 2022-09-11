@@ -19,6 +19,16 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+        <!-- EMAIL Js -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("ndQxyyc77qVmXELdK");
+        })();
+        </script>
+
         <audio autoplay loop>
             <!-- <source src="./Kesariya.mp3" type="audio/mpeg"> -->
             <!-- <source src="horse.mp3" type="audio/mpeg"> -->
@@ -377,12 +387,19 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form target="_blank" action="https://formsubmit.co/abcacd3096cbd5f1d5c0b336c5ca1e11" method="POST" class="contact__form">
-                        <input type="text" name="name" required placeholder="Name" class="contact__input">
-                        <input type="mail" name="email" required placeholder="Email" class="contact__input">
-                        <textarea name="message" required id="" placeholder="Your Message" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="submit" value="Send" class="contact__button button">
-                    </form>
+                    <!-- <form target="_blank" action="https://formsubmit.co/abcacd3096cbd5f1d5c0b336c5ca1e11" method="POST" class="contact__form"> -->
+                    <!-- <form action="" class="contact__form">
+                        <input type="text" name="name" id="name" required placeholder="Name" class="contact__input">
+                        <input type="mail" name="email" id="email" required placeholder="Email" class="contact__input">
+                        <textarea name="message" required id="message" placeholder="Your Message" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" onclick="sendMail()" value="Send" class="contact__button button">
+                    </form> -->
+                    <div class="contact__form">
+                        <input type="text" name="name" id="name" required placeholder="Name" class="contact__input">
+                        <input type="mail" name="email" id="email" required placeholder="Email" class="contact__input">
+                        <textarea name="message" required id="message" placeholder="Your Message" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" onclick="sendMail()" value="Send" class="contact__button button">
+                    </div>
                 </div>
             </section>
 
@@ -418,5 +435,6 @@
         <!-- LOL You Can't reset the count to 0. 😛 -->
         <!-- Main Javascript -->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/email.js"></script>
     </body>
 </html>
