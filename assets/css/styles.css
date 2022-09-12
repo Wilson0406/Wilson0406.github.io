@@ -50,15 +50,16 @@
 
 [data-theme="dark"] {
    /* HEX color mode */
-  --first-color: #20b2c5;
-  /* --second-color: #0d2c30; */
-  --second-color: #06505f;
+  /* --first-color: #a94de6; */
+  --first-color: #03506F;
+  --second-color: #222831;
+  /* --second-color: #06505f; */
   --text: #fff;
   --shadow-color: #ddd;
   --text-light: #fff;
   --text-hover: #000;
-  /* --background: #27496D; #0e356b; */
-  --background: #0a4750;
+  --background: #15202Bfd;
+  /* --background: #0a4750; */
 }
 
 @media screen and (min-width: 968px) {
